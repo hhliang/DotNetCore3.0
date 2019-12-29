@@ -1,1 +1,0 @@
-# DotNetCore3.0
