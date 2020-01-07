@@ -46,7 +46,8 @@ namespace ApplicationLifeTime
                        {
                            Output("[Program] webBuilder.Configure - Called");
                        })
-                       .UseStartup<Startup>();
+                       .UseStartup<Startup>()
+                       .UseUrls("http://localhost:3456");
                });
 
         public static void Output(string message)
