@@ -37,7 +37,10 @@ namespace MiddleWare
             });
 
             //全域註冊
-            app.UseMiddleware<ThirdMiddleware>();
+            //app.UseMiddleware<ThirdMiddleware>();
+
+            //擴充MiddleWare
+            app.UseThirdMiddleware();
 
             app.Run(async context =>
             {
